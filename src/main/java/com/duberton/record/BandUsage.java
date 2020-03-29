@@ -5,10 +5,11 @@ import java.util.List;
 public class BandUsage {
 
   public static void main(String[] args) {
-    var recordBandEntity = new Band("Converge", List.of("Jacob", "Kurt", "Ben", "Nate"));
-    var name = recordBandEntity.name();
+    var converge = new Band("Converge",
+        List.of(new Member("Jacob"), new Member("Kurt"), new Member("Ben"), new Member("Nate")));
+    var name = converge.name();
     System.out.println(name);
-    recordBandEntity.members().forEach(System.out::println);
+    converge.members().forEach(System.out::println);
   }
 
 }

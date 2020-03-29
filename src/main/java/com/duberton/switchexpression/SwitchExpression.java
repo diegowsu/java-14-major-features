@@ -15,8 +15,10 @@ public class SwitchExpression {
       case 6, 7, 8 -> "Summer";
       case 9, 10, 11 -> "Fall";
       case 12, 1, 2 -> "Winter";
-      default -> "Is that really a month?";
+      default -> {
+        System.out.println("Month doesn't exist");
+        yield "Is that really a month?";
+      }
     };
   }
-
 }
