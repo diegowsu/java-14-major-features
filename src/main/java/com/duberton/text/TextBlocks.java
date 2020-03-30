@@ -5,8 +5,10 @@ public class TextBlocks {
   public static void main(String[] args) {
     String before = before();
     String after = after();
+    String withSpaces = trailingWhiteSpacesNotStripped();
     System.out.println(before);
     System.out.println(after);
+    System.out.println(withSpaces);
   }
 
   private static String before() {
@@ -20,24 +22,13 @@ public class TextBlocks {
 
   private static String after() {
     return """
-        Such a long text
-        that contains a bunch of information about anything
-        that you might be interested in.
-        Who knows, it might be either something good
-        or something that's not so good, but, 
-        at the end of the day, it's still something,
-        right?""";
-  }
-
-  private static String trailingWhiteSpacesStripped() {
-    return """
-        Such a long text         
-        that contains a bunch of information about anything             
-        that you might be interested in.
-        Who knows, it might be either something good
-        or something that's not so good, but, 
-        at the end of the day, it's still something,
-        right?
+          Such a long text
+          that contains a bunch of information about anything
+          that you might be interested in.
+          Who knows, it might be either something good
+          or something that's not so good, but, 
+          at the end of the day, it's still something,
+          right?
         """;
   }
 
