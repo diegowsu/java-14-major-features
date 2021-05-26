@@ -5,7 +5,7 @@ import java.util.List;
 public class BandUsage {
 
   public static void main(String[] args) {
-    var members = List.of(new Member("Jacob"), new Member("Kurt"), new Member("Ben"), new Member("Nate"));
+    var members = List.of(new Member("Jacob"), new Member("Kurt"), new Member("Ben"), new Member("Nate"), new Member("Nombrezim");
     var converge = new Band("Converge", members);
     var name = converge.name();
     System.out.println(name);
